@@ -1,0 +1,23 @@
+.mail_box {
+  div.panel-header {
+    h3 {
+      margin: 0px;
+      font-size: 18px;
+      color: #000;
+    }
+    button.btn-primary {
+      border-radius: 100px;
+      width: 44px;
+      height: 44px;
+      @extend .btn_blur;
+    }
+  }
+}
+
+.kunde-mailbox {
+
+  div.panel-header {
+    background: #434343;
+  }
+
+}
