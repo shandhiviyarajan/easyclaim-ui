@@ -1,0 +1,247 @@
+
+.content_body {
+  padding: 0px 15px;
+  .list {
+    max-width: 490px;
+
+    label.badge {
+      width: 100%;
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+  .left_panel {
+    padding: 0px 0px;
+    border-right: thin solid #d8d8d8;
+    min-height: 100vh;
+
+    ul.list-unstyled li div.col-sm-3,
+    ul.list-unstyled li div.col-sm-4,
+    ul.list-unstyled li div.col-sm-1 {
+      padding: 0px 5px;
+    }
+
+    ul.list-unstyled li {
+      padding: 10px 10px 0px 10px;
+      cursor: pointer;
+      background: #fff;
+
+      &:hover {
+        background: #BAD5D6;
+      }
+
+      div.divider {
+        border-bottom: thin solid #d8d8d8;
+        margin-top: 10px;
+        margin-right: -10px;
+        margin-left: -10px;
+      }
+
+      div.row {
+        margin: 0px -5px 0px -5px;
+      }
+      div.item_info {
+        p {
+          display: inline-block;
+          margin: 0px 10px 10px 0px;
+          padding: 0px;
+          font-size: 12px;
+        }
+
+        p.r_date {
+          width: 98px;
+          text-align: right;
+          margin-right: 0px;
+        }
+        p.r_mails {
+          margin-left: 30px;
+        }
+        .btn-default {
+          border-radius: 100px;
+          width: 44px;
+          height: 44px;
+          text-align: Center;
+          padding: 0px;
+          font-size: 17px;
+          margin-right: 5px;
+          background: #EEEEEE;
+          -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+          -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+          box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+
+          &:hover {
+            background: #fff;
+          }
+
+        }
+        button.mail-k {
+          color: #808080;
+        }
+        button.mail-l {
+          color: #51A8FC;
+        }
+      }
+    }
+
+    i.fa-check {
+      background: $dark_green;
+      color: #fff;
+      padding: 7px 10px;
+      border-radius: 4px;
+
+    }
+  }
+  .right_panel_no_results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    img {
+      width: 168px;
+      margin: 0 auto;
+      opacity: .15;
+      display: block;
+    }
+
+    h3 {
+      font-size: 16px;
+      width: 280px;
+      color: #939393;
+      text-align: center;
+      margin: 30px auto;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, .2);
+    }
+  }
+  .right_panel_header {
+    background: #BAD5D6;
+    margin: 0px -15px;
+    padding: 10px;
+
+    p {
+      display: inline-block;
+      margin: 0px 10px 10px 0px;
+      padding: 0px;
+      font-size: 12px;
+
+    }
+
+    .btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background: $label-danger;
+      border: thin solid $label-danger;
+      color: #fff;
+      font-size: 17px;
+      padding: 0px;
+      text-align: center;
+      @extend .btn_blur;
+
+      &:hover {
+        background: #fff;
+        border: thin solid #fff;
+        color: #4a4a4a;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+label.badge-success {
+  background: $label_success;
+  color: #000;
+}
+
+label.badge-warning {
+  background: $label_warning;
+  color: #000;
+}
+
+label.badge-danger {
+  background: $label_danger;
+  color: #000;
+}
+
+label.badge-info {
+  background: $label_info;
+  color: #000;
+}
+
+.email_sync {
+  padding: 0px 15px;
+}
+
+.easy_search {
+  background: $light_grey;
+  padding: 10px 15px;
+
+  .btn-dark {
+    width: 100%;
+  }
+
+  .form-group {
+    margin: 0px;
+  }
+
+}
+
+.content_header {
+  background: #E9F4F0;
+  padding: 10px 15px;
+
+  h3 {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4a4a4a;
+    margin: 0px;
+  }
+
+  button.btn-primary {
+    background: $light_orange;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: thin solid $light_orange;
+    padding: 7px 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    @extend .btn_blur;
+  }
+}
+
+.left_panel {
+  width: 490px !important;
+  max-width: 490px !important;
+  flex: auto;
+}
+
+.right_panel {
+  flex: none;
+  max-width: none;
+
+}
+
+@media (max-width: 1023px) {
+  * {
+    display: none !important;
+  }
+}

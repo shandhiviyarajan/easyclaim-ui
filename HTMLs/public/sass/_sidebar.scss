@@ -1,0 +1,18 @@
+
+
+.no-sidebar {
+  padding-left: 0px;
+}
+
+.sidebar {
+  width: 60px;
+  background: $light_green;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 3000;
+}
+
+
+

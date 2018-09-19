@@ -1,0 +1,49 @@
+$light_green: #BAD5D6;
+$light_grey: #F3F3F3;
+$light_orange: #F8C179;
+$dark_green: #49DAA7;
+$label_success: #D8F4CD;
+$label_warning: #F9E9A6;
+$label_danger: #D96F6F;
+$label_info: #A8D1E8;
+
+body, html {
+  font-family: 'Arial', sans-serif;
+}
+
+.app-wrapper {
+  padding-left: 60px;
+  padding-right: 0px;
+}
+
+.content {
+  padding: 15px 0px;
+}
+
+
+.text-info {
+  color: #4A90E2 !important;
+}
+
+.btn-default {
+  background-color: #E9E9E9;
+  color: #4A4A4A;
+  font-weight: bold;
+}
+
+.btn {
+  padding: .25rem 1.5rem;
+  font-size: 13px;
+}
+
+label {
+  font-size: 14px;
+  color: #5B5B5B;
+  margin: 0px;
+}
+
+.btn_blur {
+  -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, .5);
+  -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, .5);
+  box-shadow: 0px 2px 8px rgba(81, 81, 81, .5);
+}

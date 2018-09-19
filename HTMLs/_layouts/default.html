@@ -2,11 +2,21 @@
 <html class="no-js" lang="en">
 {{> meta}}
 <body>
-{{> header}}
+
 <main>
     {{> body}}
 </main>
-{{> footer}}
+
+
+<script src="{{assets}}libs/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    'use strict';
+    (function ($, window) {
+        var _fix_right_side = function () {$("#right_side_panel").width($(window).width() - 580);};$(window).resize(function () {_fix_right_side();});_fix_right_side();
+    })(jQuery, window)
+
+
+</script>
 </body>
 </html>
 
