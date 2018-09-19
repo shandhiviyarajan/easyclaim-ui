@@ -1,14 +1,17 @@
 .mail_box {
-  div.panel-header {
+  div.card-header {
+    padding: 10px;
     h3 {
       margin: 0px;
       font-size: 18px;
-      color: #000;
+      color: #fff;
+      padding-top: 11px;
     }
-    button.btn-primary {
+    button {
       border-radius: 100px;
       width: 44px;
       height: 44px;
+      padding: 0px;
       @extend .btn_blur;
     }
   }
@@ -16,7 +19,7 @@
 
 .kunde-mailbox {
 
-  div.panel-header {
+  div.card-header {
     background: #434343;
   }
 
