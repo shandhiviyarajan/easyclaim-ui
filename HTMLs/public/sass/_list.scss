@@ -4,15 +4,6 @@
   .list {
     max-width: 490px;
 
-    label.badge {
-      width: 100%;
-      display: block;
-      font-size: 12px;
-      font-weight: bold;
-      color: #000;
-      padding: 10px 15px;
-      cursor: pointer;
-    }
   }
   .left_panel {
     padding: 0px 0px;
@@ -78,12 +69,7 @@
           }
 
         }
-        button.mail-k {
-          color: #808080;
-        }
-        button.mail-l {
-          color: #51A8FC;
-        }
+
       }
     }
 
@@ -118,17 +104,27 @@
       text-shadow: 0px 1px 0px rgba(0, 0, 0, .2);
     }
   }
+  .right_panel_info {
+    background: #fff;
+    position: relative;
+    min-height: 100vh;
+  }
   .right_panel_header {
     background: #BAD5D6;
     margin: 0px -15px;
     padding: 10px;
+    min-height: 54px;
 
     p {
       display: inline-block;
-      margin: 0px 10px 10px 0px;
+      margin: 7px 10px 0px 0px;
       padding: 0px;
       font-size: 12px;
 
+    }
+
+    p.r_date {
+      margin: 7px 15px 0px 0px;
     }
 
     .btn {
@@ -141,6 +137,7 @@
       font-size: 17px;
       padding: 0px;
       text-align: center;
+      margin-top: -5px;
       @extend .btn_blur;
 
       &:hover {
@@ -149,6 +146,74 @@
         color: #4a4a4a;
       }
     }
+  }
+  .right_panel_info {
+    .btn-primary {
+      border: none;
+      text-align: center;
+      height: 44px;
+      background: #EEEEEE;
+      border-radius: 0px;
+      width: 100%;
+      font-size: 12px;
+      font-weight: bold;
+
+      i.fa {
+        font-size: 17px;
+      }
+
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    ul.list-unstyled {
+      padding: 0px;
+      margin: 0px -15px;
+
+      li:nth-child(even) {
+        background: #f1f1f1;
+      }
+      li {
+        padding: 5px 30px;
+        height: 44px;
+        border-bottom: thin solid transparent;
+
+        &:hover {
+          border-bottom: thin solid #d8d8d8;
+        }
+
+        div.col-sm-4 {
+          p {
+            font-size: 12px;
+            color: #000;
+            margin-top: 8px;
+          }
+
+          select {
+            -webkit-appearance: none;
+            background: $label_info;
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+
+        .btn {
+          border-radius: 100px;
+          width: 32px;
+          height: 32px;
+          color: #fff;
+          padding: 0px;
+          border: none;
+          display: inline-block;
+          @extend .btn_blur;
+        }
+
+      }
+    }
+
   }
 }
 

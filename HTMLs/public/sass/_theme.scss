@@ -2,6 +2,7 @@ $light_green: #BAD5D6;
 $light_grey: #F3F3F3;
 $light_orange: #F8C179;
 $dark_green: #49DAA7;
+$label_green: #80B785;
 $label_success: #D8F4CD;
 $label_warning: #F9E9A6;
 $label_danger: #D96F6F;
@@ -20,11 +21,18 @@ body, html {
   padding: 15px 0px;
 }
 
-
 .text-info {
   color: #4A90E2 !important;
 }
-
+label.badge {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 15px;
+  cursor: pointer;
+}
 .btn-default {
   background-color: #E9E9E9;
   color: #4A4A4A;
@@ -34,6 +42,39 @@ body, html {
 .btn {
   padding: .25rem 1.5rem;
   font-size: 13px;
+}
+
+button.mail-k {
+  color: #808080 !important;
+}
+
+button.mail-l {
+  color: #51A8FC !important;
+}
+
+button.btn-success {
+  background: $label_green;
+
+  &:hover {
+    background: #fff;
+    color: $label_green !important;
+  }
+}
+
+button.btn-danger {
+  background: $label_danger;
+  &:hover {
+    background: #fff;
+    color: $label_danger !important;
+  }
+}
+
+button.btn-info {
+  background: #4A90E2;
+  &:hover {
+    background: #fff;
+    color: #4A90E2 !important;
+  }
 }
 
 label {

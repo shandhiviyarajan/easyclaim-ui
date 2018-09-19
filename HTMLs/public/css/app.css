@@ -11,6 +11,15 @@ body, html {
 .text-info {
   color: #4A90E2 !important; }
 
+label.badge {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 15px;
+  cursor: pointer; }
+
 .btn-default {
   background-color: #E9E9E9;
   color: #4A4A4A;
@@ -20,12 +29,36 @@ body, html {
   padding: .25rem 1.5rem;
   font-size: 13px; }
 
+button.mail-k {
+  color: #808080 !important; }
+
+button.mail-l {
+  color: #51A8FC !important; }
+
+button.btn-success {
+  background: #80B785; }
+  button.btn-success:hover {
+    background: #fff;
+    color: #80B785 !important; }
+
+button.btn-danger {
+  background: #D96F6F; }
+  button.btn-danger:hover {
+    background: #fff;
+    color: #D96F6F !important; }
+
+button.btn-info {
+  background: #4A90E2; }
+  button.btn-info:hover {
+    background: #fff;
+    color: #4A90E2 !important; }
+
 label {
   font-size: 14px;
   color: #5B5B5B;
   margin: 0px; }
 
-.btn_blur, .content_body .right_panel_header .btn, .content_header button.btn-primary {
+.btn_blur, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
   -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5); }
@@ -46,14 +79,6 @@ label {
   padding: 0px 15px; }
   .content_body .list {
     max-width: 490px; }
-    .content_body .list label.badge {
-      width: 100%;
-      display: block;
-      font-size: 12px;
-      font-weight: bold;
-      color: #000;
-      padding: 10px 15px;
-      cursor: pointer; }
   .content_body .left_panel {
     padding: 0px 0px;
     border-right: thin solid #d8d8d8;
@@ -100,10 +125,6 @@ label {
         box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.25); }
         .content_body .left_panel ul.list-unstyled li div.item_info .btn-default:hover {
           background: #fff; }
-      .content_body .left_panel ul.list-unstyled li div.item_info button.mail-k {
-        color: #808080; }
-      .content_body .left_panel ul.list-unstyled li div.item_info button.mail-l {
-        color: #51A8FC; }
     .content_body .left_panel i.fa-check {
       background: #49DAA7;
       color: #fff;
@@ -127,15 +148,22 @@ label {
       text-align: center;
       margin: 30px auto;
       text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); }
+  .content_body .right_panel_info {
+    background: #fff;
+    position: relative;
+    min-height: 100vh; }
   .content_body .right_panel_header {
     background: #BAD5D6;
     margin: 0px -15px;
-    padding: 10px; }
+    padding: 10px;
+    min-height: 54px; }
     .content_body .right_panel_header p {
       display: inline-block;
-      margin: 0px 10px 10px 0px;
+      margin: 7px 10px 0px 0px;
       padding: 0px;
       font-size: 12px; }
+    .content_body .right_panel_header p.r_date {
+      margin: 7px 15px 0px 0px; }
     .content_body .right_panel_header .btn {
       width: 40px;
       height: 40px;
@@ -145,11 +173,55 @@ label {
       color: #fff;
       font-size: 17px;
       padding: 0px;
-      text-align: center; }
+      text-align: center;
+      margin-top: -5px; }
       .content_body .right_panel_header .btn:hover {
         background: #fff;
         border: thin solid #fff;
         color: #4a4a4a; }
+  .content_body .right_panel_info .btn-primary {
+    border: none;
+    text-align: center;
+    height: 44px;
+    background: #EEEEEE;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold; }
+    .content_body .right_panel_info .btn-primary i.fa {
+      font-size: 17px; }
+    .content_body .right_panel_info .btn-primary:hover {
+      background: #fff; }
+  .content_body .right_panel_info ul.list-unstyled {
+    padding: 0px;
+    margin: 0px -15px; }
+    .content_body .right_panel_info ul.list-unstyled li:nth-child(even) {
+      background: #f1f1f1; }
+    .content_body .right_panel_info ul.list-unstyled li {
+      padding: 5px 30px;
+      height: 44px;
+      border-bottom: thin solid transparent; }
+      .content_body .right_panel_info ul.list-unstyled li:hover {
+        border-bottom: thin solid #d8d8d8; }
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-4 p {
+        font-size: 12px;
+        color: #000;
+        margin-top: 8px; }
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-4 select {
+        -webkit-appearance: none;
+        background: #A8D1E8;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center; }
+      .content_body .right_panel_info ul.list-unstyled li .btn {
+        border-radius: 100px;
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        padding: 0px;
+        border: none;
+        display: inline-block; }
 
 .pagination {
   margin: 0 auto;

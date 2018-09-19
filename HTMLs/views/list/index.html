@@ -99,8 +99,8 @@ title : List page
                     <div class="row">
                         <div class="col-sm-3"><label for="">Reklamasjon</label></div>
                         <div class="col-sm-3"><label for="">Kreditnota</label></div>
-                        <div class="col-sm-3"><label for="">Product</label></div>
-                        <div class="col-sm-3 text-center"><label for="">Reklager</label></div>
+                        <div class="col-sm-3"><label style="margin-left:30px;" for="">Product</label></div>
+                        <div class="col-sm-3 text-right"><label for="">Reklager</label></div>
 
 
                     </div>
@@ -472,45 +472,144 @@ title : List page
                 </div>
                 <div id="right_side_panel" class="col-8 right_panel">
                     <div class="list_content">
-                        <div class="list_preview">
-                            <div class="right_panel_header">
-                                <p class="r_id">
-                                    <strong>
-                                        EK-000001
-                                    </strong>
-                                </p>
-                                <p class="r_name text-info">
-                                    Ekornes Skandinavia A/S
-                                </p>
-                                <p class="r_date float-right">
-                                    <strong>
-                                        06/09/2018
-                                    </strong>
-                                </p>
-                                <button class="btn btn-danger btn-rounded">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
 
+
+
+                            <!--<div class="right_panel_loading_bar">-->
+                                <!--<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>-->
+                                <!--<span class="sr-only">Loading...</span>-->
+                            <!--</div>-->
+
+                            <div class="list_preview">
+                                <div class="right_panel_header">
+                                    <p class="r_id">
+                                        <strong>
+                                            EK-000001
+                                        </strong>
+                                    </p>
+                                    <p class="r_name text-info">
+                                        Ekornes Skandinavia A/S
+                                    </p>
+                                    <button class="btn btn-danger btn-rounded float-right">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </button>
+                                    <p class="r_date float-right">
+                                        <strong>
+                                            06/09/2018
+                                        </strong>
+                                    </p>
+
+
+                                </div>
+                                <div class="right_panel_info">
+                                    <div class="row">
+                                        <div class="col-sm-6 p-0 border-right">
+                                            <button class="btn btn-primary mail-k">
+                                                <i class="fa fa-envelope"></i> Kunde
+                                            </button>
+                                        </div>
+                                        <div class="col-sm-6 p-0">
+                                            <button class="btn btn-primary mail-l">
+                                                <i class="fa fa-envelope "></i> Leverandør
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-4 p-0">
+                                                   <p>
+                                                       <strong>
+                                                           Reklamasjon
+                                                       </strong>
+                                                   </p>
+                                                </div>
+                                                <div class="col-sm-4 p-0">
+                                                    <label for="" class="badge badge-warning">
+                                                        Venter svar
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-4 text-right p-0">
+
+                                                    <button class="btn btn-success">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <button class="btn btn-info">
+                                                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-4 p-0">
+                                                    <p>
+                                                        <strong>
+                                                            Reklamasjon
+                                                        </strong>
+                                                    </p>
+                                                </div>
+                                                <div class="col-sm-4 p-0">
+                                                    <label for="" class="badge badge-success">
+                                                        Venter svar
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-4 text-right p-0">
+
+
+                                                    <button class="btn btn-info">
+                                                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-4 p-0">
+                                                    <p>
+                                                        <strong>
+                                                            Reklamasjon
+                                                        </strong>
+                                                    </p>
+                                                </div>
+                                                <div class="col-sm-4 p-0">
+                                                    <select name="" class="form-control form-control-sm" id="">
+                                                        <option value="-1">Under behandling</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-4 text-right p-0">
+
+                                                    <button class="btn btn-success">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="right_panel_info">
-
-                            </div>
-
-                            <div class="right_panel_loading_bar">
-
-                            </div>
-
-                            <div class="right_panel_no_results">
-
-                                <img src="{{assets}}images/logo.png" alt="">
-                                <h3>
-                                    Click the left side list to view information
-                                </h3>
-
-                            </div>
 
 
-                        </div>
+
+                            <!--<div class="right_panel_no_results">-->
+
+                                <!--<img src="{{assets}}images/logo.png" alt="">-->
+                                <!--<h3>-->
+                                    <!--Click the left side list to view information-->
+                                <!--</h3>-->
+
+                            <!--</div>-->
+
                     </div>
                 </div>
             </div>
