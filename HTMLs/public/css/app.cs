@@ -1,7 +1,5 @@
 body, html {
-  font-family: 'Arial', sans-serif;
-  margin: 0px;
-  padding: 0px; }
+  font-family: 'Arial', sans-serif; }
 
 .app-wrapper {
   padding-left: 60px;
@@ -60,81 +58,16 @@ label {
   color: #5B5B5B;
   margin: 0px; }
 
-.btn_blur, #login_form button, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
+.btn_blur, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
   -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5); }
 
 #login_form {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  width: 1024px;
+  height: 768px;
   margin: 0 auto;
-  overflow: hidden;
-  background: url("../images/login_bg.jpg") center center no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-direction: column; }
-  #login_form label {
-    font-size: 11px;
-    color: #000000;
-    font-weight: bold;
-    margin-bottom: 7px; }
-  #login_form input[type="text"],
-  #login_form input[type="password"] {
-    border: thin solid #8d8d8d;
-    height: 44px;
-    outline: 0; }
-    #login_form input[type="text"]:focus,
-    #login_form input[type="password"]:focus {
-      outline: 0;
-      -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.25);
-      -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.25);
-      box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.25); }
-  #login_form a.btn-link {
-    padding: 0px;
-    color: #858585; }
-    #login_form a.btn-link:hover {
-      color: #4A90E2; }
-  #login_form button {
-    width: 200px;
-    margin: 0 auto;
-    height: 40px;
-    border: none;
-    float: right;
-    background: #49DAA7;
-    color: #fff;
-    font-size: 16px; }
-    #login_form button:hover {
-      background: #1c8862;
-      color: #fff !important; }
-  #login_form div.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: rgba(255, 255, 255, 0.85); }
-  #login_form h3 {
-    display: block;
-    font-weight: 300;
-    font-size: 32px;
-    color: #4a4a4a;
-    margin-bottom: 30px; }
-    #login_form h3 small {
-      display: block;
-      font-size: 13px; }
-  #login_form > div {
-    z-index: 4000;
-    width: 650px;
-    height: 400px;
-    background: #fff;
-    position: relative;
-    padding: 45px;
-    top: 50%;
-    margin-top: -200px; }
+  background: url("../images/login_background.jpeg") center center no-repeat; }
 
 .no-sidebar {
   padding-left: 0px; }
@@ -147,32 +80,6 @@ label {
   left: 0px;
   top: 0px;
   z-index: 3000; }
-  .sidebar nav ul {
-    padding: 0px;
-    margin: 15px 0px 0px 0px; }
-    .sidebar nav ul li {
-      list-style: none;
-      height: 60px;
-      border-bottom: thin solid #455455; }
-      .sidebar nav ul li a {
-        color: #455455;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        padding-top: 15px;
-        height: 60px; }
-        .sidebar nav ul li a:hover {
-          background: #455455;
-          color: #fff;
-          border-bottom: thin solid #fff; }
-
-#logo {
-  padding-top: 10px;
-  display: block; }
-  #logo img {
-    width: 44px;
-    margin: 0 auto;
-    display: block; }
 
 .content_body {
   padding: 0px 15px; }
@@ -191,7 +98,7 @@ label {
       cursor: pointer;
       background: #fff; }
       .content_body .left_panel ul.list-unstyled li:hover {
-        background: #ececec; }
+        background: #BAD5D6; }
       .content_body .left_panel ul.list-unstyled li div.divider {
         border-bottom: thin solid #d8d8d8;
         margin-top: 10px;
@@ -307,6 +214,7 @@ label {
         color: #000;
         margin-top: 8px; }
       .content_body .right_panel_info ul.list-unstyled li div.col-sm-4 select {
+        -webkit-appearance: none;
         background: #A8D1E8;
         color: #000;
         font-size: 12px;
@@ -345,7 +253,7 @@ label.badge-info {
   padding: 0px 15px; }
 
 .easy_search {
-  background: #e1e1e1;
+  background: #F3F3F3;
   padding: 10px 15px; }
   .easy_search .btn-dark {
     width: 100%; }
@@ -390,4 +298,4 @@ label.badge-info {
   * {
     display: none !important; } }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app.cs.map */

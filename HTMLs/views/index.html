@@ -4,28 +4,30 @@ title : Login
 ---
 
 
-<section class="container-fluid app-wrapper">
+<section class="container-fluid app-wrapper no-sidebar p-0">
 
-    <div class="sidebar">
-        <a href="#" id="logo">
-            <!--<img src="{{assets}}images/logo.png" alt="">-->
-        </a>
-    </div>
-    <div class="content">
-        <form id="login_form" action="">
+    <div class="content p-0">
+        <form id="login_form">
 
-            <div class="row">
-                <div class="col-md-4 col-md-offset-3">
-
-                    <input type="text" class="form-control" placeholder="Username / Email address">
-                    <input type="password" class="form-control" placeholder="Password">
-                    <button class="btn btn-md btn-success">Login</button>
-
-
+            <div class="shadow-lg">
+                <h3>
+                    Sign in to Brusselslife.be
+                    <small>
+                        Enter your details below.
+                    </small>
+                </h3>
+                <div class="form-group">
+                    <label for="">EMAIL ADDRESS</label>
+                    <input type="text" class="form-control" placeholder="Email address">
                 </div>
+                <div class="form-group">
+                    <label for="">PASSWORD</label> <a class="btn btn-link float-right" href="#">Forgot Password ?</a>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button class="btn btn-md btn-success"> Login <i class="fa fa-sign-in" aria-hidden="true"></i> </button>
             </div>
+            <!--<div class="overlay"></div>-->
 
         </form>
     </div>
-
 </section>

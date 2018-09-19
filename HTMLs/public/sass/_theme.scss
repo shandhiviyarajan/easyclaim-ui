@@ -1,5 +1,5 @@
 $light_green: #BAD5D6;
-$light_grey: #F3F3F3;
+$light_grey: #9f9f9f;
 $light_orange: #F8C179;
 $dark_green: #49DAA7;
 $label_green: #80B785;
@@ -10,6 +10,8 @@ $label_info: #A8D1E8;
 
 body, html {
   font-family: 'Arial', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .app-wrapper {
@@ -24,6 +26,7 @@ body, html {
 .text-info {
   color: #4A90E2 !important;
 }
+
 label.badge {
   width: 100%;
   display: block;
@@ -33,6 +36,7 @@ label.badge {
   padding: 10px 15px;
   cursor: pointer;
 }
+
 .btn-default {
   background-color: #E9E9E9;
   color: #4A4A4A;

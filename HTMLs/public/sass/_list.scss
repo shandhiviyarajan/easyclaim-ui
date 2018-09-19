@@ -22,7 +22,7 @@
       background: #fff;
 
       &:hover {
-        background: #BAD5D6;
+        background: #ececec;
       }
 
       div.divider {
@@ -191,7 +191,6 @@
           }
 
           select {
-            -webkit-appearance: none;
             background: $label_info;
             color: #000;
             font-size: 12px;
@@ -247,7 +246,7 @@ label.badge-info {
 }
 
 .easy_search {
-  background: $light_grey;
+  background: #e1e1e1;
   padding: 10px 15px;
 
   .btn-dark {

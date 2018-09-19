@@ -1,5 +1,4 @@
 
-
 .no-sidebar {
   padding-left: 0px;
 }
@@ -12,6 +11,47 @@
   left: 0px;
   top: 0px;
   z-index: 3000;
+
+  nav {
+    ul {
+      padding: 0px;
+      margin: 15px 0px 0px 0px;
+      li {
+        list-style: none;
+        height: 60px;
+        border-bottom: thin solid #455455;
+
+        a {
+
+          color: #455455;
+          display: block;
+          text-align: center;
+          font-size: 20px;
+          padding-top: 15px;
+          height:60px;
+
+
+          &:hover {
+            background: #455455;
+            color: #fff;  border-bottom: thin solid #fff;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+#logo {
+
+  padding-top: 10px;
+  display: block;
+
+  img {
+    width: 44px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 
