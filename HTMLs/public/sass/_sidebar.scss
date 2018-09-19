@@ -19,10 +19,9 @@
       li {
         list-style: none;
         height: 60px;
-        border-bottom: thin solid #455455;
+        border-bottom: thin solid #7d979969;
 
         a {
-
           color: #455455;
           display: block;
           text-align: center;
@@ -30,10 +29,9 @@
           padding-top: 15px;
           height:60px;
 
-
           &:hover {
             background: #455455;
-            color: #fff;  border-bottom: thin solid #fff;
+            color: #fff;
           }
 
         }

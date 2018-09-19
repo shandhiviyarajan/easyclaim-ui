@@ -56,6 +56,26 @@ button.mail-l {
   color: #51A8FC !important;
 }
 
+label.badge-success {
+  background: $label_success;
+  color: #000;
+}
+
+label.badge-warning {
+  background: $label_warning;
+  color: #000;
+}
+
+label.badge-danger {
+  background: $label_danger;
+  color: #000;
+}
+
+label.badge-info {
+  background: $label_info;
+  color: #000;
+}
+
 button.btn-success {
   background: $label_green;
 

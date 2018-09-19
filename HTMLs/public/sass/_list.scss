@@ -8,7 +8,8 @@
   .left_panel {
     padding: 0px 0px;
     border-right: thin solid #d8d8d8;
-    min-height: 100vh;
+    height: 75vh;
+    overflow-y: scroll;
 
     ul.list-unstyled li div.col-sm-3,
     ul.list-unstyled li div.col-sm-4,
@@ -49,7 +50,7 @@
           margin-right: 0px;
         }
         p.r_mails {
-          margin-left: 30px;
+          margin-left: 15px;
         }
         .btn-default {
           border-radius: 100px;
@@ -107,7 +108,6 @@
   .right_panel_info {
     background: #fff;
     position: relative;
-    min-height: 100vh;
   }
   .right_panel_header {
     background: #BAD5D6;
@@ -183,13 +183,12 @@
           border-bottom: thin solid #d8d8d8;
         }
 
-        div.col-sm-4 {
+        div.col-sm-3 {
           p {
             font-size: 12px;
             color: #000;
             margin-top: 8px;
           }
-
           select {
             background: $label_info;
             color: #000;
@@ -221,25 +220,6 @@
   justify-content: center;
 }
 
-label.badge-success {
-  background: $label_success;
-  color: #000;
-}
-
-label.badge-warning {
-  background: $label_warning;
-  color: #000;
-}
-
-label.badge-danger {
-  background: $label_danger;
-  color: #000;
-}
-
-label.badge-info {
-  background: $label_info;
-  color: #000;
-}
 
 .email_sync {
   padding: 0px 15px;
