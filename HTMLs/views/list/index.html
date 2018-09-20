@@ -2272,142 +2272,184 @@ title : List page
                     <div class="list_content">
 
 
-
-                            <!--<div class="right_panel_loading_bar">-->
-                                <!--<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>-->
-                                <!--<span class="sr-only">Loading...</span>-->
-                            <!--</div>-->
-
-                            <div class="list_preview">
-                                <div class="right_panel_header">
-                                    <p class="r_id">
-                                        <strong>
-                                            EK-000001
-                                        </strong>
-                                    </p>
-                                    <p class="r_name text-info">
-                                        Ekornes Skandinavia A/S
-                                    </p>
-                                    <button class="btn btn-danger btn-rounded float-right">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                    <p class="r_date float-right">
-                                        <strong>
-                                            06/09/2018
-                                        </strong>
-                                    </p>
-
-
-                                </div>
-                                <div class="right_panel_info">
-                                    <div class="row">
-                                        <div class="col-sm-6 p-0 border-right">
-                                            <button class="btn btn-primary mail-k">
-                                                <i class="fa fa-envelope"></i> Kunde
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 p-0">
-                                            <button class="btn btn-primary mail-l">
-                                                <i class="fa fa-envelope "></i> Leverandør
-                                            </button>
-                                        </div>
+                        <div id="list_preview" class="list_preview">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <div class="right_panel_header">
+                                        <p class="r_id">
+                                            <strong>
+                                                EK-000001
+                                            </strong>
+                                        </p>
+                                        <p class="r_name text-info">
+                                            Ekornes Skandinavia A/S
+                                        </p>
+                                        <button class="btn btn-danger btn-rounded float-right">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </button>
+                                        <p class="r_date float-right">
+                                            <strong>
+                                                06/09/2018
+                                            </strong>
+                                        </p>
                                     </div>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-sm-3 p-0">
-                                                   <p>
-                                                       <strong>
-                                                           Reklamasjon
-                                                       </strong>
-                                                   </p>
-                                                </div>
-                                                <div class="col-sm-3 p-0">
-                                                    <label for="" class="badge badge-warning">
-                                                        Venter svar
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-3 text-left p-0 pl-4">
-
-                                                    <button class="btn btn-success">
-                                                        <i class="fa fa-check"></i>
-                                                    </button>
-                                                    <button class="btn btn-info">
-                                                        <i class="fa fa-file-text" aria-hidden="true"></i>
-                                                    </button>
-                                                    <button class="btn btn-danger">
-                                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                                    </button>
-
-                                                </div>
+                                    <div class="right_panel_info">
+                                        <div class="row">
+                                            <div class="col-sm-6 p-0 border-right">
+                                                <button class="btn btn-primary mail-k">
+                                                    <i class="fa fa-envelope"></i> Kunde
+                                                </button>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-sm-3 p-0">
-                                                    <p>
-                                                        <strong>
-                                                            Reklamasjon
-                                                        </strong>
-                                                    </p>
-                                                </div>
-                                                <div class="col-sm-3 p-0">
-                                                    <label for="" class="badge badge-success">
-                                                        Venter svar
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-3 text-left p-0 pl-4">
-
-
-                                                    <button class="btn btn-info">
-                                                        <i class="fa fa-file-text" aria-hidden="true"></i>
-                                                    </button>
-                                                    <button class="btn btn-danger">
-                                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                                    </button>
-
-                                                </div>
+                                            <div class="col-sm-6 p-0">
+                                                <button class="btn btn-primary mail-l">
+                                                    <i class="fa fa-envelope "></i> Leverandør
+                                                </button>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-sm-3 p-0">
-                                                    <p>
-                                                        <strong>
-                                                            Reklamasjon
-                                                        </strong>
-                                                    </p>
-                                                </div>
-                                                <div class="col-sm-3 p-0">
-                                                    <select name="" class="form-control form-control-sm" id="">
-                                                        <option value="-1">Under behandling</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-3 text-left p-0 pl-4">
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-4 text-right p-0 pr-4">
+                                                        <p>
+                                                            <strong>
+                                                                Reklamasjon
+                                                            </strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-4 p-0">
+                                                        <label for="" class="badge badge-warning">
+                                                            Venter svar
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-4 text-left p-0 pl-4">
 
-                                                    <button class="btn btn-success">
-                                                        <i class="fa fa-check"></i>
-                                                    </button>
+                                                        <button class="btn btn-success">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        <button class="btn btn-info">
+                                                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button class="btn btn-danger">
+                                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                                        </button>
 
-
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-4 text-right p-0 pr-4">
+                                                        <p>
+                                                            <strong>
+                                                                Kreditnota
+                                                            </strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-4 p-0">
+                                                        <label for="" class="badge badge-success">
+                                                            Venter svar
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-4 text-left p-0 pl-4">
+
+
+                                                        <button class="btn btn-info">
+                                                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                                                        </button>
+                                                        <button class="btn btn-danger">
+                                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-4 text-right p-0 pr-4">
+                                                        <p>
+                                                            <strong>
+                                                                Product
+                                                            </strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-4 p-0">
+                                                        <select name="" class="form-control form-control-sm" id="">
+                                                            <option value="-1">Under behandling</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-4 text-left p-0 pl-4">
+
+                                                        <button class="btn btn-success">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <!--- kunde email box-->
+                        <div class="mail_box kunde-mailbox">
+                            <div class="card rounded-0">
+                                <div class="card-header rounded-0">
+                                    <h3 class="float-left">
+                                        Kunde
+                                    </h3>
+                                    <button class="btn btn-primary float-right">
+                                        <i class="fa fa-close"></i>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-xl-2  col-md-12">
+                                                            <label for="">Name</label>
+                                                        </div>
+                                                        <div class="col-xl-10 col-md-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Full name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-xl-2  col-md-12">
+                                                            <label for="">Name</label>
+                                                        </div>
+                                                        <div class="col-xl-10  col-md-12">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Full name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- laverandor email box-->
 
-
-                            <!--<div class="right_panel_no_results">-->
-
-                                <!--<img src="{{assets}}images/logo.png" alt="">-->
-                                <!--<h3>-->
-                                    <!--Click the left side list to view information-->
-                                <!--</h3>-->
-
-                            <!--</div>-->
-
+                        <!-- progress bar-->
+                        <!--<div id="right_progress_bar" class="right_panel_loading_bar">-->
+                            <!--<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>-->
+                            <!--<span class="sr-only">Loading...</span>-->
+                        <!--</div>-->
+                        <!-- static panel-->
+                        <div id="no_results" class="right_panel_no_results">
+                            <img src="{{assets}}images/logo.png" alt="">
+                            <h3>
+                                Click the left side list to view information
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>

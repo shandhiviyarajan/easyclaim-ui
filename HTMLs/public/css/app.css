@@ -76,7 +76,7 @@ label {
   color: #5B5B5B;
   margin: 0px; }
 
-.btn_blur, #login_form button, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
+.btn_blur, #login_form button, .mail_box div.card-header button, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
   -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5); }
@@ -188,6 +188,22 @@ label {
     width: 44px;
     margin: 0 auto;
     display: block; }
+
+.mail_box div.card-header {
+  padding: 10px; }
+  .mail_box div.card-header h3 {
+    margin: 0px;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 11px; }
+  .mail_box div.card-header button {
+    border-radius: 100px;
+    width: 44px;
+    height: 44px;
+    padding: 0px; }
+
+.kunde-mailbox div.card-header {
+  background: #434343; }
 
 .content_body {
   padding: 0px 15px; }
@@ -317,11 +333,13 @@ label {
       border-bottom: thin solid transparent; }
       .content_body .right_panel_info ul.list-unstyled li:hover {
         border-bottom: thin solid #d8d8d8; }
-      .content_body .right_panel_info ul.list-unstyled li div.col-sm-3 p {
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-3 p,
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-4 p {
         font-size: 12px;
         color: #000;
         margin-top: 8px; }
-      .content_body .right_panel_info ul.list-unstyled li div.col-sm-3 select {
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-3 select,
+      .content_body .right_panel_info ul.list-unstyled li div.col-sm-4 select {
         background: #A8D1E8;
         color: #000;
         font-size: 12px;
