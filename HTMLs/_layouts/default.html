@@ -7,14 +7,56 @@
     {{> body}}
 </main>
 
-
-<script src="{{assets}}libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="{{assets}}libs/jquery/jquery.min.js"></script>
 <script type="text/javascript">
-    'use strict';
-    (function ($, window) {
-        var _fix_right_side = function () {$("#right_side_panel").width($(window).width() - 580);};$(window).resize(function () {_fix_right_side();});_fix_right_side();
-    })(jQuery, window)
 
+    (function ($, window) {
+        'use strict';
+        var EasyClaim = EasyClaim || {};
+        var km = $("#kunde-mailbox");
+        var lm = $("#laverandr-mailbox");
+
+        EasyClaim = (function () {
+            function EasyClaim() {
+                return {
+                    init: function () {
+                        _load();
+                        _fix_right_side();
+                    }
+                };
+            }
+
+            function _load() {
+                $(window).resize(function () {
+                    _fix_right_side();
+                });
+
+                $('[data-toggle="tooltip"]').tooltip();
+
+            }
+
+            function _fix_right_side() {
+                $("#right_side_panel").width($(window).width() - 580);
+            }
+
+            function _reset_window() {
+                km.hide(0);
+                lm.hide(0);
+            }
+
+            function _open_mail_box() {
+                $(".mail-k").click(function () {
+                    $("#kunde-mailbox").show(0);
+                });
+            }
+
+            return EasyClaim;
+        });
+
+        var EasyClaimApp = new EasyClaim();
+        EasyClaimApp.init();
+
+    })(jQuery, window)
 
 </script>
 </body>

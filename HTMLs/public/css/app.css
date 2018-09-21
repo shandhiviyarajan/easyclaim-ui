@@ -72,11 +72,11 @@ button.btn-info {
     color: #4A90E2 !important; }
 
 label {
-  font-size: 14px;
-  color: #5B5B5B;
+  font-size: 13px;
+  color: #000;
   margin: 0px; }
 
-.btn_blur, #login_form button, .mail_box div.card-header button, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
+.btn_blur, #login_form button, .btn-file-browser, .mail_box div.card-header button, .content_body .right_panel_header .btn, .content_body .right_panel_info ul.list-unstyled li .btn, .content_header button.btn-primary {
   -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5);
   box-shadow: 0px 2px 8px rgba(81, 81, 81, 0.5); }
@@ -189,20 +189,42 @@ label {
     margin: 0 auto;
     display: block; }
 
-.mail_box div.card-header {
-  padding: 10px; }
-  .mail_box div.card-header h3 {
-    margin: 0px;
-    font-size: 18px;
-    color: #fff;
-    padding-top: 11px; }
-  .mail_box div.card-header button {
-    border-radius: 100px;
-    width: 44px;
-    height: 44px;
-    padding: 0px; }
+.btn-file-browser {
+  position: relative;
+  margin: 7px 0px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 34px; }
+  .btn-file-browser:hover {
+    background: #6a6a6a;
+    color: #fff; }
+  .btn-file-browser:active {
+    background: #666;
+    color: #fff; }
+  .btn-file-browser input[type="file"] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer; }
 
-.kunde-mailbox div.card-header {
+.mail_box div.card-header h3 {
+  margin: 0px;
+  font-size: 18px;
+  color: #fff;
+  padding-top: 11px; }
+.mail_box div.card-header button {
+  border-radius: 100px;
+  width: 44px;
+  height: 44px;
+  padding: 0px; }
+
+#kunde-mailbox div.card-header {
   background: #434343; }
 
 .content_body {
@@ -295,19 +317,17 @@ label {
     .content_body .right_panel_header p.r_date {
       margin: 7px 15px 0px 0px; }
     .content_body .right_panel_header .btn {
+      border: none;
       width: 40px;
       height: 40px;
       border-radius: 100px;
-      background: #D96F6F;
-      border: thin solid #D96F6F;
-      color: #fff;
       font-size: 17px;
       padding: 0px;
       text-align: center;
-      margin-top: -5px; }
+      margin-top: -5px;
+      margin-right: 7px; }
       .content_body .right_panel_header .btn:hover {
         background: #fff;
-        border: thin solid #fff;
         color: #4a4a4a; }
   .content_body .right_panel_info .btn-primary {
     border: none;
