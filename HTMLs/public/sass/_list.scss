@@ -21,9 +21,31 @@
       padding: 10px 10px 0px 10px;
       cursor: pointer;
       background: #fff;
+      position: relative;
 
       &:hover {
         background: #ececec;
+      }
+
+      &:active {
+        background: #fff;
+      }
+
+      &.active {
+        background: #BAD5D6;
+
+        &:after {
+          //content: '';
+          //width: 0;
+          //height: 0;
+          //border-top: 8px solid transparent;
+          //border-left: 10px solid #BAD5D6;
+          //border-bottom: 8px solid transparent;
+          //position: absolute;
+          //top: 50%;
+          // margin-top: -5px;
+          //right: 0px;
+        }
       }
 
       div.divider {
@@ -87,7 +109,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
 
     img {
       width: 168px;
@@ -279,6 +301,10 @@
 .right_panel {
   flex: none;
   max-width: none;
+  .list_preview {
+    display: none;
+  }
+
 
 }
 

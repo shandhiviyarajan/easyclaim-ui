@@ -213,18 +213,23 @@ label {
     z-index: 100;
     cursor: pointer; }
 
-.mail_box div.card-header h3 {
-  margin: 0px;
-  font-size: 18px;
-  color: #fff;
-  padding-top: 11px; }
-.mail_box div.card-header button {
-  border-radius: 100px;
-  width: 44px;
-  height: 44px;
-  padding: 0px; }
+.mail_box {
+  display: none; }
+  .mail_box div.card-header h3 {
+    margin: 0px;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 11px; }
+  .mail_box div.card-header button {
+    border-radius: 100px;
+    width: 44px;
+    height: 44px;
+    padding: 0px; }
+  .mail_box label {
+    font-weight: bold; }
 
-#kunde-mailbox div.card-header {
+#kunde-mailbox div.card-header,
+#laverander-mailbox div.card-header {
   background: #434343; }
 
 .content_body {
@@ -243,9 +248,14 @@ label {
     .content_body .left_panel ul.list-unstyled li {
       padding: 10px 10px 0px 10px;
       cursor: pointer;
-      background: #fff; }
+      background: #fff;
+      position: relative; }
       .content_body .left_panel ul.list-unstyled li:hover {
         background: #ececec; }
+      .content_body .left_panel ul.list-unstyled li:active {
+        background: #fff; }
+      .content_body .left_panel ul.list-unstyled li.active {
+        background: #BAD5D6; }
       .content_body .left_panel ul.list-unstyled li div.divider {
         border-bottom: thin solid #d8d8d8;
         margin-top: 10px;
@@ -288,7 +298,7 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh; }
+    height: 70vh; }
     .content_body .right_panel_no_results img {
       width: 168px;
       margin: 0 auto;
@@ -422,6 +432,8 @@ label {
 .right_panel {
   flex: none;
   max-width: none; }
+  .right_panel .list_preview {
+    display: none; }
 
 @media (max-width: 1023px) {
   * {

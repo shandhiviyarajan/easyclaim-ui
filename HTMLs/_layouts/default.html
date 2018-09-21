@@ -7,7 +7,7 @@
     {{> body}}
 </main>
 
-<script type="text/javascript" src="{{assets}}libs/jquery/jquery.min.js"></script>
+
 <script type="text/javascript">
 
     (function ($, window) {
@@ -15,13 +15,19 @@
         var EasyClaim = EasyClaim || {};
         var km = $("#kunde-mailbox");
         var lm = $("#laverandr-mailbox");
+        var left_panel_list = $(".left_panel ul.list-unstyled li");
+        var list_preview = $("#list_preview");
+        var no_results = $("#no_results");
 
-        EasyClaim = (function () {
+        EasyClaim = (function ($) {
             function EasyClaim() {
                 return {
                     init: function () {
                         _load();
                         _fix_right_side();
+                        _left_panel_list();
+                        _right_preview_panel();
+                        _show_mail_box();
                     }
                 };
             }
@@ -39,19 +45,58 @@
                 $("#right_side_panel").width($(window).width() - 580);
             }
 
-            function _reset_window() {
-                km.hide(0);
-                lm.hide(0);
-            }
+            function _left_panel_list() {
+                left_panel_list.click(function () {
+                    left_panel_list.not($(this)).removeClass("active");
+                    $(this).addClass("active");
 
-            function _open_mail_box() {
-                $(".mail-k").click(function () {
-                    $("#kunde-mailbox").show(0);
+                    _reset_window();
+                    _show_right_preview();
                 });
             }
 
+            function _right_preview_panel() {
+
+                $(".close_right_preview").click(function () {
+                    list_preview.hide();
+                    _show_no_result();
+                });
+
+
+            }
+
+            function _show_mail_box() {
+
+                $(".mail_box_close").on('click', function () {
+                    $(".mail_box").hide();
+                });
+
+                $(".mail-k").on('click', function () {
+                    $("#kunde-mailbox").show(0);
+                });
+                $(".mail-l").on('click', function () {
+                    $("#laverander-mailbox").show(0);
+                });
+
+            }
+
+            function _reset_window() {
+                km.hide(0);
+                lm.hide(0);
+                no_results.hide(0);
+            }
+
+            function _show_no_result() {
+                no_results.show(0);
+            }
+
+            function _show_right_preview() {
+                list_preview.show();
+            }
+
+
             return EasyClaim;
-        });
+        })(jQuery);
 
         var EasyClaimApp = new EasyClaim();
         EasyClaimApp.init();
