@@ -1,16 +1,38 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+/**
+ * App Module
+ * Author - Shan Dhiviyarajan <prashasoft@gmail.com>
+ */
 
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";  //used to build forms
 
+
+
+/*
+ Application modules */
+import {AppRouterModule, PageComponents} from "./app.router";
+/*
+ Application Components */
+import {AppComponent} from "./app.component";
+
+//Bootstrap your application
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+    //Your imported modules
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AppRouterModule //Your AppRouterModule
+    ],
+    //Your app components
+    declarations: [
+        AppComponent,
+        PageComponents
+    ],
+    //Your app component to start
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

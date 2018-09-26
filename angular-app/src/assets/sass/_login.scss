@@ -1,0 +1,92 @@
+#login_form {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url('../images/login_bg.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+
+  label {
+    font-size: 11px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 7px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: thin solid #8d8d8d;
+    height: 44px;
+    outline: 0;
+
+    &:focus {
+      outline: 0;
+      -webkit-box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+      -moz-box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+      box-shadow: 0px 2px 8px rgba(81, 81, 81, .25);
+    }
+  }
+  a.btn-link {
+    padding: 0px;
+    color: #858585;
+
+    &:hover {
+      color: #4A90E2;
+    }
+  }
+  button {
+    width: 200px;
+    margin: 0 auto;
+    height: 40px;
+    border: none;
+    float: right;
+    background: $dark_green;
+    color: #fff;
+    font-size: 16px;
+    @extend .btn_blur;
+
+    &:hover {
+      background: darken($dark_green, 25%);
+      color: #fff !important;
+    }
+  }
+
+  div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  h3 {
+    display: block;
+    font-weight: 300;
+    font-size: 32px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+
+    small {
+      display: block;
+      font-size: 13px;
+    }
+  }
+
+  > div {
+    z-index: 4000;
+    width: 650px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    padding: 45px;
+    top: 50%;
+    margin-top: -200px;
+
+  }
+}
