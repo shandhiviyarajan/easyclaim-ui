@@ -1,13 +1,15 @@
-
 <main>
     <!-- app header included -->
-    <app-header *ngIf="isLogin"></app-header>
+    <app-header></app-header>
 
-    <app-sidenav *ngIf="isLogin"></app-sidenav>
+    <app-sidenav></app-sidenav>
 
-    <!-- router outlet is required to show your routed templates -->
-    <router-outlet></router-outlet>
+
+        <!-- router outlet is required to show your routed templates -->
+        <router-outlet></router-outlet>
+
 
     <!--app footer-->
-    <app-footer *ngIf="isLogin"></app-footer>
+    <app-footer></app-footer>
+
 </main>
