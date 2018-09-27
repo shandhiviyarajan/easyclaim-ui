@@ -6,6 +6,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";  //used to build forms
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -22,6 +23,7 @@ import {AppComponent} from "./app.component";
     //Your imported modules
     imports: [
         BrowserModule,
+        NgbModule,
         FormsModule,
         ReactiveFormsModule,
         AppRouterModule //Your AppRouterModule

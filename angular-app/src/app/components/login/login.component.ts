@@ -5,19 +5,15 @@
 
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {AuthService} from "../../services/AuthService";
 
 
 @Component({
     selector: 'app-login',
-    templateUrl: './login.component.html',
-    providers:[AuthService]
-
-
+    templateUrl: './login.component.html'
 })
 
 export class LoginComponent implements OnInit {
-    constructor(public router: Router, private AuthService:AuthService) {
+    constructor(public router: Router) {
 
     }
 
@@ -26,10 +22,7 @@ export class LoginComponent implements OnInit {
     }
 
     submitForm() {
-        this.AuthService.signIn();
-        console.log(this.AuthService.signIn());
         this.router.navigate(['/home']);
-
     }
 
 
